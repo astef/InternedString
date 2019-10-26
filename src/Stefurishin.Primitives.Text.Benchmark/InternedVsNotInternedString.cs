@@ -8,9 +8,9 @@ namespace Stefurishin.Primitives.Text.Benchmark
 {
     [CsvExporter]
     [MarkdownExporterAttribute.GitHub]
-    public class InternedVsUninternedString
+    public class InternedVsNotInternedString
     {
-        static void Main() => BenchmarkRunner.Run<InternedVsUninternedString>();
+        static void Main() => BenchmarkRunner.Run<InternedVsNotInternedString>();
 
         private string _string;
         private InternedString _internedString;
@@ -56,7 +56,7 @@ namespace Stefurishin.Primitives.Text.Benchmark
         }
 
         [Benchmark]
-        public bool UninternedString() => _stringSet.Contains(_string);
+        public bool String() => _stringSet.Contains(_string);
 
         [Benchmark]
         public bool InternedString() => _internedStringSet.Contains(_internedString);
