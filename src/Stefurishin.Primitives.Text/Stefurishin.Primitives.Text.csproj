@@ -8,6 +8,12 @@
     <Copyright>Alexander Stefurishin</Copyright>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Description>Represents a string which is guaranteed to be interned.
+Provides an optimized GetHashCode() and Equals(...) overrides,
+which rely on reference comparison rather than string contents.</Description>
+    <PackageProjectUrl>https://github.com/astef/InternedString</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/astef/InternedString</RepositoryUrl>
+    <PackageTags>String, Interning, GetHashCode, Equals</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
