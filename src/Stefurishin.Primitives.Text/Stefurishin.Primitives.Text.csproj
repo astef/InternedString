@@ -20,6 +20,10 @@ which rely on reference comparison rather than string contents.</Description>
     <Optimize>false</Optimize>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Rep\InternedString\src\Stefurishin.Primitives.Text\Stefurishin.Primitives.Text.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Include="..\..\LICENSE">
       <Pack>True</Pack>

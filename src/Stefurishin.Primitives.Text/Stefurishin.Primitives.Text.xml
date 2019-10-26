@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Stefurishin.Primitives.Text</name>
+    </assembly>
+    <members>
+        <member name="T:Stefurishin.Primitives.Text.InternedString">
+            <summary>
+            Represents a string which is guaranteed to be interned.<br/>
+            Provides an optimized <see cref="M:Stefurishin.Primitives.Text.InternedString.GetHashCode"/> and <see cref="M:Stefurishin.Primitives.Text.InternedString.Equals(System.Object)"/> overrides, <br/>
+            which rely on reference comparison rather than string contents.
+            </summary>
+        </member>
+        <member name="P:Stefurishin.Primitives.Text.InternedString.String">
+            <summary>
+            An interned string object
+            </summary>
+        </member>
+    </members>
+</doc>
