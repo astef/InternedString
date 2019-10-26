@@ -27,10 +27,6 @@ namespace Stefurishin.Primitives.Text
 
         public static bool operator !=(InternedString l, InternedString r) => !(l == r);
 
-        public static implicit operator string(InternedString i) => i?.String;
-
-        public static implicit operator InternedString(string s) => s is null ? null : new InternedString(s);
-
         public override string ToString() => String;
     }
 }
