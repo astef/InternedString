@@ -6,7 +6,7 @@
     <Authors>Alexander Stefurishin</Authors>
     <Product>Stefurishin.Primitives</Product>
     <Copyright>Alexander Stefurishin</Copyright>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <Description>Represents a string which is guaranteed to be interned.
 Provides an optimized GetHashCode() and Equals(...) overrides,
