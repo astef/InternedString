@@ -27,8 +27,4 @@ which rely on reference comparison rather than string contents.</Description>
     </None>
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.3" />
-  </ItemGroup>
-
 </Project>
