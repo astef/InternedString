@@ -21,9 +21,14 @@ namespace Stefurishin.Primitives.Text.Tests
             ReferenceEquals(c, d).ShouldBeFalse();
             ReferenceEquals(internedC.String, internedD.String).ShouldBeTrue();
             internedC.Equals(internedD).ShouldBeTrue();
-            (internedC == internedD).ShouldBeTrue();
-            (internedC != internedD).ShouldBeFalse();
             internedC.GetHashCode().ShouldBe(internedD.GetHashCode());
+        }
+
+        [TestMethod]
+        public void TestEqualsWithNull()
+        {
+            (new InternedString("a").Equals(null)).ShouldBe(false);
+            (new InternedString("a").Equals("a")).ShouldBe(false);
         }
 
         private static string Concat(string first, string second) => first + second;

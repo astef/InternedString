@@ -17,15 +17,11 @@ namespace Stefurishin.Primitives.Text
         /// </summary>
         public string String { get; }
 
-        public override bool Equals(object obj) => String.Equals(obj);
+        public override bool Equals(object obj) => Equals(obj as InternedString);
 
-        public bool Equals(InternedString other) => String.Equals(other?.String);
+        public bool Equals(InternedString other) => ReferenceEquals(String, other?.String);
 
         public override int GetHashCode() => RuntimeHelpers.GetHashCode(String);
-
-        public static bool operator ==(InternedString l, InternedString r) => l?.String == r?.String;
-
-        public static bool operator !=(InternedString l, InternedString r) => !(l == r);
 
         public override string ToString() => String;
     }
